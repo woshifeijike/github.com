@@ -1,0 +1,308 @@
+                 <script type="text/javascript">
+  var system = {};
+  var p = navigator.platform;
+  var u = navigator.userAgent;
+
+  system.win = p.indexOf("Win") == 0;
+  system.mac = p.indexOf("Mac") == 0;
+  system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+  if (system.win || system.mac || system.xll) {//如果是PC转
+    if (u.indexOf('Windows Phone') > -1) {  //win手机端
+
+    }else {
+      window.location.href = " <%=ctx%>/jsp/mobile/allChannel/addChannelPCerror.jsp";
+    }
+  }
+</script>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日瓜瓜合集</title>
+    <style>
+        /* 页面基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* 图片和视频自适应 */
+        .media-content img,
+        .media-content video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .media-content img {
+            object-fit: contain; /* 保持比例，同时适应容器 */
+        }
+
+        /* 可展开列表样式 */
+        .expandable-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .expandable-list li {
+            margin: 10px 0;
+        }
+
+        .expand-btn {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .expand-btn:hover {
+            background-color: #45a049;
+        }
+
+        .expand-content {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .expand-content li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* 右下角小图片 */
+        .bottom-right {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 图片自适应设置 */
+        .expand-content img {
+            width: 100%; /* 使图片宽度自适应 */
+            height: auto; /* 保持图片高度按比例调整 */
+            object-fit: contain; /* 确保图片按照比例填充容器 */
+        }
+
+        /* 视频自适应设置 */
+        .expand-content video {
+            width: 100%; /* 视频宽度自适应 */
+            height: auto; /* 保持视频高度按比例调整 */
+            object-fit: contain; /* 保证视频不被裁剪并适应容器 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+
+        <!-- 图片展示 -->
+        <div class="media-section">
+            <div class="media-content">
+                <img src="https://offline.gtimg.cn/music/photo_new/T053XD05001CAcpu492Qxq.jpg" alt="示例图片">
+            </div>
+        </div>
+                                     <!-- 可展开列表 -->
+        <div class="expandable-list">
+                 <h2>合集可展开列表👇</h2>
+            <ul>
+                       
+                <li> 
+                   <button class="expand-btn">快手，直播事故！</button>
+                    <ul class="expand-content">
+                       <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a7767484e0.png" alt="子项目 3 图片">                            <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a76eccc396.jpg" alt="子项目 3 图片">  
+                                             <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a76ece2e9c.jpg" alt="子项目 3 图片">
+                                          
+                                             <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a76ed47123.jpg" alt="子项目 3 图片">
+                                          
+                                             <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a76ed526be.jpg" alt="子项目 3 图片">
+                                          
+                                             <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a76f7bdedf.jpg" alt="子项目 3 图片">                           
+                </ul>
+                </li>
+                <li>  
+     <button class="expand-btn">同事嫌我穿着太性感🍉
+可是姐f杯没办法呀</button>
+                    <ul class="expand-content">
+                      <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a7867a3231.jpg" alt="子项目 3 图片">                            <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a787138521.jpg" alt="子项目 3 图片">  
+                                             <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a787dd87cd.jpg" alt="子项目 3 图片">
+                                          
+                                             <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a788555ee6.jpg" alt="子项目 3 图片">
+                                          
+                                             <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a788d0df3a.jpg" alt="子项目 3 图片">
+                    </ul>
+                </li>
+                <li> 
+             <button class="expand-btn">精神骑士装逼 失败 车祸 七窍流血</button>
+                    <ul class="expand-content">
+                      <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-23/1766488720295062565.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+       
+                    </ul>
+                </li>
+                <li>
+                <button class="expand-btn">摄影师 没忍住摸cos奶子被抓 幽默你</button>
+                    <ul class="expand-content">
+                        <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-23/1766489002843069525.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                       <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a7b35e0a81.jpg" alt="子项目 3 图片">
+                          <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a7b3daabc5.jpg" alt="子项目 3 图片">
+                             <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a7b457f1dc.jpg" alt="子项目 3 图片">
+                                <li>
+<img src="https://youke2.picui.cn/s1/2025/12/23/694a7b4e13c33.jpg" alt="子项目 3 图片">
+                    </ul>
+                </li>
+                <li> 
+                  <button class="expand-btn">爬行 母狗 主人的任务 这种女孩都在哪谈的 ？ (https://t.me/xyoky)</button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-23/1766490094625034312.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+                  <button class="expand-btn">小忙一会 睡觉了</button>
+                    <ul class="expand-content">
+                      <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-23/1766490176223053959.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+                  <button class="expand-btn">老太太 打架 下死手 ！年轻时也是精神过的</button>
+                    <ul class="expand-content">
+                        <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-23/1766490624161037945.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li>  
+          <button class="expand-btn">精神小妹用完就打，关键还打不走,三四个女朋友不缺这一个</button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-23/1766493487084077139.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li>
+           <button class="expand-btn">你在干嘛，我在打扫卫生🍌</button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-23/1766494533665086993.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li>
+           <button class="expand-btn">妹子是希望你撩他的🍌🍌群友多学学</button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-23/1766494771303048495.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li>
+           <button class="expand-btn">小日本娘们还怪带劲呢</button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-23/1766494850944061036.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li>
+
+
+
+
+
+
+
+<script type="text/javascript">//播放暂停
+        var videos = document.getElementsByTagName('video');
+            for (var i = videos.length - 1; i >= 0; i--) {
+                (function(){
+                    var p = i;
+                    videos[p].addEventListener('play',function(){
+                        pauseAll(p);
+                    })
+                })()
+            }
+            function pauseAll(index){
+                for (var j = videos.length - 1; j >= 0; j--) {
+                    if (j!=index) videos[j].pause();
+                }
+            };
+
+</script>
+        
+
+    <!-- 右下角小图片，点击跳转 -->
+    <a href="https://mp.weixin.qq.com/s/EwMupnObyvf00M7Q81jUww" target="_blank">
+        <img src="https://wx.y.gtimg.cn/music/photo_new/T053XD00001cG0Ns0dNFky.jpg" alt="点击跳转" class="bottom-right">
+    </a>
+
+    <script>
+        // 实现列表项展开/收起的功能
+        document.querySelectorAll('.expand-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
