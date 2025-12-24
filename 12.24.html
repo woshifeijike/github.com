@@ -1,0 +1,314 @@
+                 <script type="text/javascript">
+  var system = {};
+  var p = navigator.platform;
+  var u = navigator.userAgent;
+
+  system.win = p.indexOf("Win") == 0;
+  system.mac = p.indexOf("Mac") == 0;
+  system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+  if (system.win || system.mac || system.xll) {//如果是PC转
+    if (u.indexOf('Windows Phone') > -1) {  //win手机端
+
+    }else {
+      window.location.href = " <%=ctx%>/jsp/mobile/allChannel/addChannelPCerror.jsp";
+    }
+  }
+</script>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日瓜瓜合集</title>
+    <style>
+        /* 页面基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* 图片和视频自适应 */
+        .media-content img,
+        .media-content video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .media-content img {
+            object-fit: contain; /* 保持比例，同时适应容器 */
+        }
+
+        /* 可展开列表样式 */
+        .expandable-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .expandable-list li {
+            margin: 10px 0;
+        }
+
+        .expand-btn {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .expand-btn:hover {
+            background-color: #45a049;
+        }
+
+        .expand-content {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .expand-content li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* 右下角小图片 */
+        .bottom-right {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 图片自适应设置 */
+        .expand-content img {
+            width: 100%; /* 使图片宽度自适应 */
+            height: auto; /* 保持图片高度按比例调整 */
+            object-fit: contain; /* 确保图片按照比例填充容器 */
+        }
+
+        /* 视频自适应设置 */
+        .expand-content video {
+            width: 100%; /* 视频宽度自适应 */
+            height: auto; /* 保持视频高度按比例调整 */
+            object-fit: contain; /* 保证视频不被裁剪并适应容器 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+
+        <!-- 图片展示 -->
+        <div class="media-section">
+            <div class="media-content">
+                <img src="https://offline.gtimg.cn/music/photo_new/T053XD05001CAcpu492Qxq.jpg" alt="示例图片">
+            </div>
+        </div>
+                                     <!-- 可展开列表 -->
+        <div class="expandable-list">
+                 <h2>3.19🍉合集可展开列表👇</h2>
+            <ul>
+                       
+                <li> 
+                   <button class="expand-btn">穿这么性感，小朋友都忍不住了 ！</button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766563128324077550.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>  
+                </ul>
+                </li>
+                <li>  
+     <button class="expand-btn"> 散散味 ～</button>
+                    <ul class="expand-content">
+                      <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766563345376051071.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+             <button class="expand-btn">洋麻雀 这样 评价 #easygirl #亚洲马桶 就像 巴西牛排 🥩</button>
+                    <ul class="expand-content">
+                                           <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766563486035095542.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li>
+                <button class="expand-btn">喝多了还是磕大了，直接跳车</button>
+                    <ul class="expand-content">
+                        <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766563913777097202.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+                  <button class="expand-btn">车主还挺大方</button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766564005091022984.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+                  <button class="expand-btn">滑雪也能遇到福利姬</button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766564137267051104.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+                  <button class="expand-btn">偷吃又被逮住当 蜘蛛人了，摔惨了</button>
+                    <ul class="expand-content">
+                        <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766564651999003879.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li>  
+          <button class="expand-btn">调教被阿sir发现了，我当不了舔狗了 </button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766565130014061898.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li>
+              <button class="expand-btn">湖南湘西为民职业学校，一名教官摔死学生带到宿舍的小猫</button>
+                    <ul class="expand-content">
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766565632943068601.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                       <video controls>
+        <source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766565666245027439.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li>
+            <button class="expand-btn">患者在做菜过程中，不慎将削了皮的黄瓜塞入肛门</button>
+                    <ul class="expand-content">
+                       <li>
+<img src="https://esaimg.cdn1.vip/i/694ba776bf5e8_1766565750.webp" alt="子项目 3 图片">
+                    </ul>
+                </li>
+                <li> 
+         <button class="expand-btn">大学食堂一对情侣沉浸式表演扣福 </button>
+                    <ul class="expand-content">
+                             <video controls>
+<source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766566007221099738.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+        <button class="expand-btn">男子手术住院，老婆和情人碰面了大打出手😂</button>
+                    <ul class="expand-content">
+                             <video controls>
+<source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766566159409032134.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+       <button class="expand-btn">老司机稳稳地，一手开车，一手玩妹扣福，玩妹玩出新高度</button>
+                    <ul class="expand-content">
+                       <li>
+                             <video controls>
+<source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766566257047055411.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+         <button class="expand-btn">国服小乔护男友，精神小妹这回够意思，去年的瓜又被炒了</button>
+                    <ul class="expand-content">
+                       <li>
+                             <video controls>
+<source src="https://mcoss.gz-cmc.cn/cos/video/a048c4068b0a408abd401ef026e7087c/UGC/6736b5ebe4b0cd487e130027/2025-12-24/1766566415371013685.mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                    </ul>
+                </li>
+                <li> 
+                 
+
+
+
+
+
+
+
+
+<script type="text/javascript">//播放暂停
+        var videos = document.getElementsByTagName('video');
+            for (var i = videos.length - 1; i >= 0; i--) {
+                (function(){
+                    var p = i;
+                    videos[p].addEventListener('play',function(){
+                        pauseAll(p);
+                    })
+                })()
+            }
+            function pauseAll(index){
+                for (var j = videos.length - 1; j >= 0; j--) {
+                    if (j!=index) videos[j].pause();
+                }
+            };
+
+</script>
+              
+
+    <!-- 右下角小图片，点击跳转 -->
+    <a href="https://mp.weixin.qq.com/s/EwMupnObyvf00M7Q81jUww" target="_blank">
+        <img src="https://wx.y.gtimg.cn/music/photo_new/T053XD00001cG0Ns0dNFky.jpg" alt="点击跳转" class="bottom-right">
+    </a>
+
+    <script>
+        // 实现列表项展开/收起的功能
+        document.querySelectorAll('.expand-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
